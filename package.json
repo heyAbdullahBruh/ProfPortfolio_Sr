@@ -1,0 +1,29 @@
+{
+  "name": "abdullahshayedserver",
+  "version": "1.0.0",
+  "description": "The server is Personal web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Server",
+    "PortFolio",
+    "Express",
+    "Abdullah Sahyed",
+    "Personal website"
+  ],
+  "author": "Mr.Pie",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
