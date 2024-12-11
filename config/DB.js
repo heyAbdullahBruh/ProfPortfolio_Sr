@@ -5,7 +5,7 @@ const  CONNECT_DB=async (DBURI)=>{
         await mongoose.connect(DBURI);
           console.log('Connected to MongoDB')
     } catch (error) {
-         console.error('Could not connect to DB', err.message);
+         console.error('Could not connect to DB', error.message);
     };
 };
 
