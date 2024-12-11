@@ -1,5 +1,6 @@
 const express= require('express');
 const cors= require('cors');
+const messageRouter = require('./routes/comment.route');
 
 const app =express();
 
@@ -19,6 +20,12 @@ app.get('/',(req,res)=>{
         return res.status(500).json({status:false,message:`Something went worng : ${error.message}`}); 
     }
 });
+
+
+// Other's Routes
+app.use('/api',messageRouter);
+
+
 
 
 // false route's error definder
